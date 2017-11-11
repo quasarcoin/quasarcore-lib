@@ -4632,22 +4632,22 @@ function removeNetwork(network) {
 addNetwork({
     name: 'livenet',
     alias: 'mainnet',
-    coin: 'yng',
-    url: 'yangcoin:',
-    coinName: 'YANGCOIN',
-    shortName: 'YNG',
+    coin: 'qax',
+    url: 'quasar:',
+    coinName: 'Quasar',
+    shortName: 'QAX',
     prefix: 'Y',
     txtimestamp: true,
     algorithm: "scrypt",
-    pubkeyhash: 0x4e,
-    privatekey: 0x8c,
+    pubkeyhash: 0x3a,
+    privatekey: 0x78,
     scripthash: 0xcc,
     xpubkey: 0x0488b21e,
     xprivkey: 0x0488ade4,
-    networkMagic: 0x59414e47,
-    port: 23001,
+    networkMagic: 0x51554153,
+    port: 13201,
     dnsSeeds: [
-        'yng001.bitchk.com'
+        'qac001.bitchk.com'
     ]
 });
 
@@ -25344,35 +25344,29 @@ utils.intFromLE = intFromLE;
 
 },{"bn.js":93,"minimalistic-assert":193,"minimalistic-crypto-utils":194}],109:[function(require,module,exports){
 module.exports={
-  "_args": [
-    [
-      "elliptic@6.4.0",
-      "/Users/user/dev/blockchain/yangcoin/yangcore-lib"
-    ]
-  ],
-  "_development": true,
-  "_from": "elliptic@6.4.0",
+  "_from": "elliptic@^6.0.0",
   "_id": "elliptic@6.4.0",
   "_inBundle": false,
   "_integrity": "sha1-ysmvh2LIWDYYcAPI3+GT5eLq5d8=",
   "_location": "/browserify-sign/elliptic",
   "_phantomChildren": {},
   "_requested": {
-    "type": "version",
+    "type": "range",
     "registry": true,
-    "raw": "elliptic@6.4.0",
+    "raw": "elliptic@^6.0.0",
     "name": "elliptic",
     "escapedName": "elliptic",
-    "rawSpec": "6.4.0",
+    "rawSpec": "^6.0.0",
     "saveSpec": null,
-    "fetchSpec": "6.4.0"
+    "fetchSpec": "^6.0.0"
   },
   "_requiredBy": [
     "/browserify-sign"
   ],
   "_resolved": "https://registry.npmjs.org/elliptic/-/elliptic-6.4.0.tgz",
-  "_spec": "6.4.0",
-  "_where": "/Users/user/dev/blockchain/yangcoin/yangcore-lib",
+  "_shasum": "cac9af8762c85836187003c8dfe193e5e2eae5df",
+  "_spec": "elliptic@^6.0.0",
+  "_where": "/Users/user/dev/blockchain/quasar/quasarcore-lib/node_modules/browserify-sign",
   "author": {
     "name": "Fedor Indutny",
     "email": "fedor@indutny.com"
@@ -25380,6 +25374,7 @@ module.exports={
   "bugs": {
     "url": "https://github.com/indutny/elliptic/issues"
   },
+  "bundleDependencies": false,
   "dependencies": {
     "bn.js": "^4.4.0",
     "brorand": "^1.0.1",
@@ -25389,6 +25384,7 @@ module.exports={
     "minimalistic-assert": "^1.0.0",
     "minimalistic-crypto-utils": "^1.0.0"
   },
+  "deprecated": false,
   "description": "EC cryptography",
   "devDependencies": {
     "brfs": "^1.4.3",
@@ -27936,35 +27932,29 @@ arguments[4][107][0].apply(exports,arguments)
 arguments[4][108][0].apply(exports,arguments)
 },{"bn.js":118,"dup":108,"minimalistic-assert":193,"minimalistic-crypto-utils":194}],134:[function(require,module,exports){
 module.exports={
-  "_args": [
-    [
-      "elliptic@6.4.0",
-      "/Users/user/dev/blockchain/yangcoin/yangcore-lib"
-    ]
-  ],
-  "_development": true,
-  "_from": "elliptic@6.4.0",
+  "_from": "elliptic@^6.0.0",
   "_id": "elliptic@6.4.0",
   "_inBundle": false,
   "_integrity": "sha1-ysmvh2LIWDYYcAPI3+GT5eLq5d8=",
   "_location": "/create-ecdh/elliptic",
   "_phantomChildren": {},
   "_requested": {
-    "type": "version",
+    "type": "range",
     "registry": true,
-    "raw": "elliptic@6.4.0",
+    "raw": "elliptic@^6.0.0",
     "name": "elliptic",
     "escapedName": "elliptic",
-    "rawSpec": "6.4.0",
+    "rawSpec": "^6.0.0",
     "saveSpec": null,
-    "fetchSpec": "6.4.0"
+    "fetchSpec": "^6.0.0"
   },
   "_requiredBy": [
     "/create-ecdh"
   ],
   "_resolved": "https://registry.npmjs.org/elliptic/-/elliptic-6.4.0.tgz",
-  "_spec": "6.4.0",
-  "_where": "/Users/user/dev/blockchain/yangcoin/yangcore-lib",
+  "_shasum": "cac9af8762c85836187003c8dfe193e5e2eae5df",
+  "_spec": "elliptic@^6.0.0",
+  "_where": "/Users/user/dev/blockchain/quasar/quasarcore-lib/node_modules/create-ecdh",
   "author": {
     "name": "Fedor Indutny",
     "email": "fedor@indutny.com"
@@ -27972,6 +27962,7 @@ module.exports={
   "bugs": {
     "url": "https://github.com/indutny/elliptic/issues"
   },
+  "bundleDependencies": false,
   "dependencies": {
     "bn.js": "^4.4.0",
     "brorand": "^1.0.1",
@@ -27981,6 +27972,7 @@ module.exports={
     "minimalistic-assert": "^1.0.0",
     "minimalistic-crypto-utils": "^1.0.0"
   },
+  "deprecated": false,
   "description": "EC cryptography",
   "devDependencies": {
     "brfs": "^1.4.3",
@@ -32102,13 +32094,7 @@ utils.getJSF = getJSF;
 
 },{}],165:[function(require,module,exports){
 module.exports={
-  "_args": [
-    [
-      "elliptic@3.0.3",
-      "/Users/user/dev/blockchain/yangcoin/yangcore-lib"
-    ]
-  ],
-  "_from": "elliptic@3.0.3",
+  "_from": "elliptic@=3.0.3",
   "_id": "elliptic@3.0.3",
   "_inBundle": false,
   "_integrity": "sha1-hlybQgv75VAGuflp+XoNLESWZZU=",
@@ -32117,19 +32103,20 @@ module.exports={
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "elliptic@3.0.3",
+    "raw": "elliptic@=3.0.3",
     "name": "elliptic",
     "escapedName": "elliptic",
-    "rawSpec": "3.0.3",
+    "rawSpec": "=3.0.3",
     "saveSpec": null,
-    "fetchSpec": "3.0.3"
+    "fetchSpec": "=3.0.3"
   },
   "_requiredBy": [
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/elliptic/-/elliptic-3.0.3.tgz",
-  "_spec": "3.0.3",
-  "_where": "/Users/user/dev/blockchain/yangcoin/yangcore-lib",
+  "_shasum": "865c9b420bfbe55006b9f969f97a0d2c44966595",
+  "_spec": "elliptic@=3.0.3",
+  "_where": "/Users/user/dev/blockchain/quasar/quasarcore-lib",
   "author": {
     "name": "Fedor Indutny",
     "email": "fedor@indutny.com"
@@ -32137,12 +32124,14 @@ module.exports={
   "bugs": {
     "url": "https://github.com/indutny/elliptic/issues"
   },
+  "bundleDependencies": false,
   "dependencies": {
     "bn.js": "^2.0.0",
     "brorand": "^1.0.1",
     "hash.js": "^1.0.0",
     "inherits": "^2.0.1"
   },
+  "deprecated": false,
   "description": "EC cryptography",
   "devDependencies": {
     "browserify": "^3.44.2",
@@ -54429,10 +54418,12 @@ module.exports={
         "coverage": "gulp coverage",
         "build": "gulp browser"
     },
-    "contributors": [{
-        "name": "Daniel Cousens",
-        "email": "bitcoin@dcousens.com"
-    }],
+    "contributors": [
+        {
+            "name": "Daniel Cousens",
+            "email": "bitcoin@dcousens.com"
+        }
+    ],
     "keywords": [
         "bitcoin",
         "transaction",
@@ -54451,7 +54442,7 @@ module.exports={
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/yangcoin/bitcore-lib.git"
+        "url": "https://github.com/quasarcoin/bitcore-lib.git"
     },
     "browser": {
         "request": "browser-request"
@@ -54474,6 +54465,7 @@ module.exports={
     },
     "license": "MIT"
 }
+
 },{}],"bitcore-lib":[function(require,module,exports){
 (function (global,Buffer){
 'use strict';
